@@ -1,7 +1,9 @@
+/// <reference types="@types/jest" />
 import { setupHooks } from '../src/hooks'; // Adjust path if necessary
+import { expect, jest } from '@jest/globals';
 
 // Mock console.log to prevent output during tests
-let consoleSpy: jest.SpyInstance;
+let consoleSpy: any;
 beforeEach(() => {
   consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
 });

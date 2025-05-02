@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "types": ["node"] // Removed "jest" to avoid global type conflicts
+    "types": ["node", "jest", "expect-type"] // Removed "jest" to avoid global type conflicts
   },
   "include": ["src/**/*", "tests/**/*"],
   "exclude": ["node_modules", "dist", "examples"]

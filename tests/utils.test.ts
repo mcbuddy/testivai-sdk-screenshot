@@ -1,7 +1,8 @@
 import { generateTimestamp, ensureDirectoryExists } from '../src/utils'; // Adjust path if necessary
+import { expect, jest } from '@jest/globals';
 
 // Mock console.log
-let consoleSpy: jest.SpyInstance;
+let consoleSpy: any;
 beforeEach(() => {
   consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
 });
